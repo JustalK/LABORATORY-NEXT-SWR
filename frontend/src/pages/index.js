@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import styles from '@src/styles/Home.module.scss'
 
 export default function Home () {
@@ -10,7 +11,10 @@ export default function Home () {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Static App - justalk</h1>
+        <h1 className={styles.title}>Testing SWR</h1>
+        <Link href="/test1">
+          <a>TEST 1</a>
+        </Link>
       </main>
 
       <footer className={styles.footer}>

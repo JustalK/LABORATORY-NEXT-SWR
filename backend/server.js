@@ -40,7 +40,7 @@ module.exports = {
       console.log('Server fail to start !')
       reject(new Error('Server fail to start !'))
     }
-    console.log('Server Started 2')
+    console.log('Server Started')
     console.log('Logger Activated')
     resolve(true)
   }

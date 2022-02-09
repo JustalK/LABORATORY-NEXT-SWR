@@ -42,6 +42,8 @@ services:
   backend:
     build: ./backend
     container_name: labo-backend
+    volumes:
+      - ./backend:/usr/src/app
     environment:
       - REDIS_SERVER_IP=redis-server
       - VIRTUAL_HOST=api.backend.net

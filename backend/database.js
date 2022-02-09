@@ -65,11 +65,7 @@ module.exports = {
     mongoose.connect(db_uri_data, { useNewUrlParser: true, useUnifiedTopology: true })
 
     mongoose.connection.on('connected', err => {
-      console.log('DB CONNECTING');
-    });
-
-    mongoose.connection.on('connected', err => {
-      console.log('DB CONNECTED');
+      console.log('Mongodb connected');
     });
 
     mongoose.connection.on('error', err => {

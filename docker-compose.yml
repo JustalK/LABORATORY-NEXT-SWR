@@ -32,6 +32,10 @@ services:
   frontend:
     build: ./frontend
     container_name: labo-frontend
+    volumes:
+      - ./frontend:/usr/src/app
+      - ./frontend/node_modules
+      - ./frontend/.next
     environment:
       - VIRTUAL_HOST=frontend.net
       - VIRTUAL_PORT=3000
